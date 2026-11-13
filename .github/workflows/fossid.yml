@@ -23,5 +23,6 @@ jobs:
           --license-mode new \
           --vsf-mode new \
           --format github \
-          --fail
+          --fail \
+          --ignore-projects .github/ignoreme
 
