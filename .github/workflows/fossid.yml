@@ -18,10 +18,10 @@ jobs:
         run: |
           fossid \
           diffscan \
-          --fossid-host ${{ secrets.FOSSID_HOST }} \
-          --fossid-token ${{ secrets.FOSSID_TOKEN }} \
+          --host ${{ secrets.FOSSID_HOST }} \
+          --token ${{ secrets.FOSSID_TOKEN }} \
           --license-mode new \
           --vsf-mode new \
-          --github-workflow-errors \
+          --format github \
           --fail
 
